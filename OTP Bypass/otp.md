@@ -1,4 +1,6 @@
 ##### Can Be Bypassed Using Array Of OTP
+the content-type should be application/json
+
 ````
 {
 "otp":[

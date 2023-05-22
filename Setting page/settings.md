@@ -40,3 +40,19 @@ POST /user/changeroles
 change to 
 {"id"=10,"role"="Admin"}                response: {"status":"OK"}
 ````
+---------------------------------------------------------------------------------------------
+#### - Try to remove CSRF token from the request and check if it works. And generate burp csrf POC
+--------------------------------------------------------------------------------------------
+##### Send empty token array in csrf token parameter
+````
+POST /settings
+
+email=me@gmail.com&token[]=
+````
+##### Bypassing CSRF by changing request method from POST to GET
+````
+GET /settings?----------
+--
+--
+--
+````

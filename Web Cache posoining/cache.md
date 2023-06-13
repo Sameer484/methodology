@@ -7,8 +7,10 @@
  
  &nbsp;
  &nbsp;
+ &nbsp;
+ &nbsp;
 
-
+### Cache Deception
 
 ##### - If the caching server caches all the static files and you found sensitive info on any endpoint, force the caching server to cache that endpoint using path confusion attack.(sometimes appending nonexisting path maynot works).
 ````
@@ -19,3 +21,5 @@ another method using \n encoding
 
 example.com/account.php%0Asomething.css ==> caching server often don't parse this encoding. 
 ````
+##### After appending some random endpoint.css(or any other extensions), you may see 404 not found page. But check for view source, there may be some info leaking and check if that request has been cached or not.
+![Screenshot from 2023-06-13 09-45-11](https://github.com/Sameer484/methodology/assets/110039044/aaf6360f-9f5c-4ad1-bbc9-cd51517d3a54)

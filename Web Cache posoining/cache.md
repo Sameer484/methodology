@@ -1,10 +1,22 @@
+##### If any endpoint is found that is using some caching server, then run paramminer on that endpoint. Use paramminer on JS enpoint also if they are caching js files.
+&nbsp;
+&nbsp;
+
+##### Using case sensitive HOST header. VARNISH Caching server may serve as 404 not found if capitalized host header value is send.
+![Screenshot from 2023-06-22 19-26-01](https://github.com/Sameer484/methodology/assets/110039044/e407fe48-de42-45a3-a33f-f1505dbce85c)
+&nbsp;
+&nbsp;
+
+
 #### - Check if all the static files of the website are cached or not. If they are cached, find the endpoint that discloses sensitive information in the response like userinfo and session token maybe. And try to add dummy endpoint with extension js,png,avif etc.
 ![Screenshot from 2023-06-06 20-59-17](https://github.com/Sameer484/methodology/assets/110039044/68e6b4ac-ae22-4003-989d-aa38b208b3c1)
-
+&nbsp;
+&nbsp;
 
 #### - Check if appending file extension results the same content when not applied. eg. browsing /home/content.css yeilds same results as /home/content
 ![Screenshot from 2023-06-06 21-17-17](https://github.com/Sameer484/methodology/assets/110039044/b2828ea4-c2fe-458f-9365-d9a9dd02a17a)
-
+&nbsp;
+&nbsp;
 
 #### - If there is no reflected value in the response due the header and X-Timer header was recognized and it's value is reflected in header only , we can try to cause server error by entering large number of random value in the X-Timer header
 

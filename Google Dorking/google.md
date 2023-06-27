@@ -2,3 +2,7 @@
 ````
 inurl:samsung site:http://s3.amazonaws.com confidential | top secret | classified | undisclosed
 ````
+#### Dorking by file extension. Searching for subdomains that uses php file type like (subdomains.com/forgetpassword.php)
+````
+site:*.abb.com ext:php
+````

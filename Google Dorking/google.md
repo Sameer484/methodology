@@ -6,3 +6,7 @@ inurl:samsung site:http://s3.amazonaws.com confidential | top secret | classifie
 ````
 site:*.abb.com ext:php
 ````
+####  yml which Mostly Contain backend Structure such as credentials , users etc
+````
+ext:yml inurl:Orgname
+````

@@ -1,9 +1,26 @@
-##### If any endpoint is found that is using some caching server, then run paramminer on that endpoint. Use paramminer on JS enpoint also if they are caching js files.
+#### If any endpoint is found that is using some caching server, then run paramminer on that endpoint. Use paramminer on JS enpoint also if they are caching js files.
+&nbsp;
+&nbsp;
+#### If adding cache buster in the get parameter doesn't miss the cache(ie. parameter isn't used as cache keys). OR using ?cb=1 yeilds same results.
+````
+GET /?cb=1                       Response=> cache:HIT 
+````
+so in this case, check if Origin header is used as cache key
+````
+GET /
+Origin:hacked                    Response=> Cache:Miss
+````
+and now check if using ?cb=nothing reflects in the response
+![Screenshot from 2023-06-29 19-43-38](https://github.com/Sameer484/methodology/assets/110039044/8e50b005-3ca0-4096-aa91-3248c851a099)
+
 &nbsp;
 &nbsp;
 
+
+
 ##### Using case sensitive HOST header. VARNISH Caching server may serve as 404 not found if capitalized host header value is send.
 ![Screenshot from 2023-06-22 19-26-01](https://github.com/Sameer484/methodology/assets/110039044/e407fe48-de42-45a3-a33f-f1505dbce85c)
+<hr>
 &nbsp;
 &nbsp;
 

@@ -1,4 +1,5 @@
 #### If any endpoint is found that is using some caching server, then run paramminer on that endpoint. Use paramminer on JS enpoint also if they are caching js files.
+---
 &nbsp;
 &nbsp;
 #### If adding cache buster in the get parameter doesn't miss the cache(ie. parameter isn't used as cache keys). OR using ?cb=1 yeilds same results.
@@ -13,6 +14,7 @@ Origin:hacked                    Response=> Cache:Miss
 and now check if using ?cb=nothing reflects in the response
 ![Screenshot from 2023-06-29 19-43-38](https://github.com/Sameer484/methodology/assets/110039044/8e50b005-3ca0-4096-aa91-3248c851a099)
 
+---
 &nbsp;
 &nbsp;
 
@@ -27,11 +29,15 @@ and now check if using ?cb=nothing reflects in the response
 
 #### - Check if all the static files of the website are cached or not. If they are cached, find the endpoint that discloses sensitive information in the response like userinfo and session token maybe. And try to add dummy endpoint with extension js,png,avif etc.
 ![Screenshot from 2023-06-06 20-59-17](https://github.com/Sameer484/methodology/assets/110039044/68e6b4ac-ae22-4003-989d-aa38b208b3c1)
+
+---
 &nbsp;
 &nbsp;
 
 #### - Check if appending file extension results the same content when not applied. eg. browsing /home/content.css yeilds same results as /home/content
 ![Screenshot from 2023-06-06 21-17-17](https://github.com/Sameer484/methodology/assets/110039044/b2828ea4-c2fe-458f-9365-d9a9dd02a17a)
+
+---
 &nbsp;
 &nbsp;
 
@@ -45,6 +51,9 @@ and now check if using ?cb=nothing reflects in the response
  &nbsp;
  &nbsp;
 
+---
+
+---
 ### Cache Deception
 
 #### - If the caching server caches all the static files and you found sensitive info on any endpoint, force the caching server to cache that endpoint using path confusion attack.(sometimes appending nonexisting path maynot works).

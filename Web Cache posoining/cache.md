@@ -2,7 +2,7 @@
 ---
 &nbsp;
 &nbsp;
-#### If adding cache buster in the get parameter doesn't miss the cache(ie. parameter isn't used as cache keys). OR using ?cb=1 yeilds same results.
+#### If adding cache buster in the get parameter doesn't MISS the cache(ie. parameter isn't used as cache keys). OR using ?cb=1 yeilds same results.
 ````
 GET /?cb=1                       Response=> cache:HIT 
 ````

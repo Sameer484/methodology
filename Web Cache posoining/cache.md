@@ -18,9 +18,13 @@ and now check if using ?cb=nothing reflects in the response
 &nbsp;
 &nbsp;
 
+#### Verify that utm_content isnot used as cache key(ie. removing ?utm_content gives same results for / but utm_content changes something in response). and chain this with other endpoints.  
 
+&nbsp;
+&nbsp;
 
-##### Using case sensitive HOST header. VARNISH Caching server may serve as 404 not found if capitalized host header value is send.
+---
+#### Using case sensitive HOST header. VARNISH Caching server may serve as 404 not found if capitalized host header value is send.
 ![Screenshot from 2023-06-22 19-26-01](https://github.com/Sameer484/methodology/assets/110039044/e407fe48-de42-45a3-a33f-f1505dbce85c)
 <hr>
 &nbsp;

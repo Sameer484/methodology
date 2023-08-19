@@ -1,5 +1,8 @@
 #### TOOLS 
 - wpscan
+  ````
+  wpscan --url https://blog.com --enumerate u   ==> user enumeration
+  ````
 
 #### WP-USER ENUMERATION
 This issue will only acceptable when target website is hiding their current users or they are not publically available. So attacker can use those user data for bruteforcing and other staff

@@ -2,6 +2,7 @@
 - wpscan
   ````
   wpscan --url https://blog.com --enumerate u   ==> user enumeration
+  wpscan  -U users.txt -P password.txt  --url https://blog.com
   ````
 
 #### WP-USER ENUMERATION

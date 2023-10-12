@@ -30,3 +30,9 @@ using dig
 
 dig axfr example.com @ns.example.com 
 ```
+---
+### BIND(Berkley Internet Name Domain) is a sofware when installed on linux makes it dns server. You can query the version of BIND installed using
+```
+dig chaos txt version.bind @z.hackycorp.com
+```
+

@@ -22,4 +22,11 @@
 `host -t ns example.com`
 
 ---
-### DNS Zone transfer
+### DNS Zone transfer(copying all the zone file(dns information) from one server to another). It occurs when dns allow zone transfer for  unauthorized ip addresses.
+```
+host -l example.com  ns.example.com
+
+using dig
+
+dig axfr example.com @ns.example.com 
+```

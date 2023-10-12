@@ -18,3 +18,8 @@
     openssl s_client -connect example.com:443 | openssl x509 -noout -text  | grep DNS:
     ```
   ---
+### Finding the name server using 
+`host -t ns example.com`
+
+---
+### DNS Zone transfer

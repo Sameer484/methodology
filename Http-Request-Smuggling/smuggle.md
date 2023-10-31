@@ -31,3 +31,7 @@ Content-Length: 27
 
 {"error":"Invalid request"}
 ```
+---
+### use this picture to identify the type of frontend and backend
+
+![Screenshot from 2023-10-31 18-18-35](https://github.com/Sameer484/methodology/assets/110039044/835c41e8-a5be-4975-a793-29abe1053668)

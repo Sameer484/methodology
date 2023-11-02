@@ -12,4 +12,7 @@
   ```
   aws  --endpoint-url http://s3.bucket.htb s3api --list-buckets
   ```
-- 
+- List the bucket contents
+  ```
+  aws s3  --endpoint-url http://s3.bucket.htb ls bucket_name_here
+  ```

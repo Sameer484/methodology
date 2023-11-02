@@ -16,3 +16,8 @@
   ```
   aws s3  --endpoint-url http://s3.bucket.htb ls bucket_name_here
   ```
+- Upload the local file to the bucket url
+  ```
+  aws s3  --endpoint-url http://s3.bucket.htb cp file.txt s3://bucket_name_here/directory
+  ```
+  ```

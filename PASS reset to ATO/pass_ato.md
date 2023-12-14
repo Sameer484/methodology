@@ -116,7 +116,7 @@ FUZZ
  another methods
  - PARAMETER POLLUTION
 ```` email=victim@gmail.com&email=attacker@gmai.com````
- - SENDING TWO EMAIL AS ARRAY IN JSON AND ALSO CHANGING CONTENT-TYPE TO application/json
+ - SENDING TWO EMAIL AS ARRAY IN JSON AND ALSO CHANGING CONTENT-TYPE TO application/json(if the application is sending the email as json, then try sending the email as array)
     ```` 
     POST /reset
     HOST: target.com

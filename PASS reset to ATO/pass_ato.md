@@ -169,5 +169,10 @@ Host: target.com
 
 added="email:victim@gmail.com"&token=token
 
+
 ````
+### Observing the token that is generated for pass reset.
+Send the password reset request link using intruder, so that the time duration between creating tokens is small and observe the difference in part of the pass reset.
+Insert payload as  attacker@gmail.com, victim@gmail.com and run the intruder.
+`https://infosecwriteups.com/how-i-was-able-to-take-over-any-account-via-the-password-reset-functionality-ef1659f8b481` Read this article.
 

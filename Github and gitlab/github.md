@@ -10,3 +10,7 @@
    ```
 - After that just print source code of files to your terminal (note that not all files will be restored).
 - Check this blog to understand in depth detail about dumping the full source code. https://en.internetwache.org/dont-publicly-expose-git-or-how-we-downloaded-your-websites-sourcecode-an-analysis-of-alexas-1m-28-07-2015/
+
+### Finding leaks in github repo. 
+Download or clone the repo and install tool `gitleaks` and run the command
+`gitleaks -v --repo-path=/tmp/testrepo`

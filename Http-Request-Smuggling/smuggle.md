@@ -6,6 +6,9 @@ In the inspector tab in burp , change to HTTP/1.1 from request attributes
 2. If you are trying to using CL.TE , make sure you include connection: keep-alive header,
 cause the backend server will only include that smuggled part in next request over same connection and
  using connection: keep-alive header will keep connection over same network.
+3. In transfer encoding, 0 should be followed by new line
+   0\r\n
+   \r\n
 ```
 ### Identify if the frontend is using TE
 send the request with  invalid transfer encoding request and see if it respond with bad request. If the response is invalid or bad request then the frontend is rejecting the invalid TE request. So, it confirms TE in frontend

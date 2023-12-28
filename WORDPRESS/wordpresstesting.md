@@ -64,3 +64,10 @@ send the post request with the following data
 
 #### ssrf through endpoint
 - Try to access https://worpress-site.com/wp-json/oembed/1.0/proxy?url=ybdk28vjsa9yirr7og2lukt10s6ju8.burpcollaborator.net and the Worpress site may make a request to you.
+
+ ### Is the wordpress using onelogin plugin to allow saml based login? The plugin by default block login using wp-login.php?normal=1 but attacker can use xmlrpc.php to login.
+ When a user logs on one of your WordPress sites via OneLogin, the authentication plugin creates a new entry in the WordPress user database with the default password @@@nopass@@@. This wouldn't be a problem if the plugin disabled all normal WordPress authentication methods, but it doesn't
+  ```
+  attacker can create new post and can do many other functions too
+  check out this hackerone report==> https://hackerone.com/reports/138869
+  ```

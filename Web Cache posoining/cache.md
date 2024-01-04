@@ -78,3 +78,9 @@ example.com/account.php%0Asomething.css ==> caching server often don't parse thi
  ````
 /xxxx/xxxxxx/;.js          Response => 200 OK
  ````
+ Apply these tricks
+ ```
+  https://example.com/private_info.js?cachebuster=1
+https://example.com/private_info/.css?cachebuster=1
+https://example.com/private_info/;.png?cachebuster=1
+ ```

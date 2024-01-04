@@ -15,6 +15,10 @@
 
 ###### TIP: if login page is built with php , use user-agent payload
 
+---
+#### Insert backslash in username and password parameter while creating account
+`username=admin\&password=admin\` It may bypass some waf and also trigger error in sql syntax
+
 ##### IN PARAMETER
 - testing in ?parameter=test by replacing below payload 
   ````?parameter[id) VALUES (NULL); WAITFOR DELAY '0:0:5';--]=test````

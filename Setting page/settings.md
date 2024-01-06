@@ -27,6 +27,10 @@ email=attacker@gmail.com              email=victim@gmail.com    ==> attacker wil
 
 Check james kettle samashing race condition blog on portswigger. 
 ```
+#### Update email function
+```
+If there is email changing function. Change the email to email1. App will send verification link to email1. Don't click that link but instead change email to email2 and use the link that was sent to email1. See if it works. 
+```
 ##### If there is option to add second email, add with company email
 ````
 POST /settings

@@ -14,7 +14,7 @@
 - User-Agent: ````"XOR(if(now()=sysdate(),sleep(6),0))XOR"````
 
 ###### TIP: if login page is built with php , use user-agent payload
-
+##### Also check injection in cookie 
 ---
 #### Insert backslash in username and password parameter while creating account
 `username=admin\&password=admin\` It may bypass some waf and also trigger error in sql syntax

@@ -1,3 +1,7 @@
+### Use this tool to check for http request smuggling vulnerabilities
+`https://github.com/defparam/smuggler`
+
+
 ### Things to keep in mind to successfully exploit http request smuggling attacks.
 ```
 1. Make sure to use HTTP/1.1 before trying to exploit because HTTP/2 doesn't support that.

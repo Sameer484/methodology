@@ -20,4 +20,5 @@
   ```
   aws s3  --endpoint-url http://s3.bucket.htb cp file.txt s3://bucket_name_here/directory
   ```
-  ```
+- List account information in aws ( whoami like command in aws)
+  `aws sts get-caller-identity`

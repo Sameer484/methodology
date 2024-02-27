@@ -9,7 +9,7 @@
   POST /register
   email=exisitng@gmail.com%00&password=password123
   ```
-  - Use space at the end of the email
+- Use space at the end of the email
     ```
       POST /register
   email=exisitng@gmail.com &password=password123

@@ -176,3 +176,14 @@ Send the password reset request link using intruder, so that the time duration b
 Insert payload as  attacker@gmail.com, victim@gmail.com and run the intruder.
 https://infosecwriteups.com/how-i-was-able-to-take-over-any-account-via-the-password-reset-functionality-ef1659f8b481 Read this article.
 
+### Checking OTP function for password reset
+Check out if the otp functions matches these steps
+```
+The OTP is a 4-digit code. (Can I bruteforce it? Maybe, if we are not rate limited.)
+The OTP expires after 10 minutes or is invalidated after 3 incorrect attempts.
+Before requesting a new OTP, the user must validate a captcha.
+The OTP generation will cease after 5 new OTP requests.
+```
+The last step can be bypasssed by using upper and lower case email like generating 5 otp for samec@gmail.com and  5 for Samec@gmail.com .
+Read this writeups for exploiting this scenario https://bhavukjain.com/blog/2023/07/08/account-takeover-custom-otp
+

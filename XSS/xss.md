@@ -4,6 +4,8 @@ JavaScript://%250A/*?'/*\'/*"/*\"/*`/*\`/*%26apos;)/*<!--></Title/</Style/</Scri
 ```
 ### XSS payloads
 `https://github.com/foospidy/payloads/tree/master/other/xss`
+#### XSS escalation
+`https://www.bugcrowd.com/blog/the-ultimate-guide-to-finding-and-escalating-xss-bugs/`
 ### Quick simple payload to use 
 `"samsec%25%25"><u>`
 ### XSS mindmap

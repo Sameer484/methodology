@@ -1,0 +1,8 @@
+### Signup using burp collaborator email 
+`user@abc123.burpcollaborator.net`
+### We can use gopher protocol to redirect the internal service after getting http request to our domain. 
+```
+1. we give our url to internal service
+2. we send back 302 response with location header being gopher://
+3. scan the internal ports.
+```

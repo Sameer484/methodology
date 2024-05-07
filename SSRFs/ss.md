@@ -1,3 +1,6 @@
+### blog post that is extremely useful to look for and exploit ssrf techniques
+`https://d0nut.medium.com/piercing-the-veal-short-stories-to-read-with-friends-4aa86d606fc5`
+
 ### Signup using burp collaborator email 
 `user@abc123.burpcollaborator.net`
 ### We can use gopher protocol to redirect the internal service after getting http request to our domain. 

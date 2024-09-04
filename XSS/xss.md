@@ -77,3 +77,4 @@ we can execute xss before the sanitize or adding to dom. <img src=x onerror=aler
 ## XSS in PDF generation using PD4ML library
 The normal javascript injection doesn't work with pd4ml, but there is way to add attachment to the pdf. This way we can read internal files.
 `<pd4ml:attachment src=”file:///etc/passwd”><pd4ml:attachment>`
+- Also, we can try to perfrom SSTI when there is pdf generation in backend. 

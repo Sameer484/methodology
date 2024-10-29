@@ -10,3 +10,16 @@ site:*.abb.com ext:php
 ````
 ext:yml inurl:Orgname
 ````
+
+#### Unique google dorking to find jucy subdomains
+```
+site:*<*.target.*
+site:*<-*.target.*
+site:*>*.target.*
+site:*->*.target.*
+site:*<->*.target.*
+```
+#### Some good dorks to find login panels
+```
+site:*<*.target.com intext:"login" | intitle:"login" | inurl:"login" | intext:"username" | intitle:"username" | inurl:"username" | intext:"password" | intitle:"password" | inurl:"password"
+```

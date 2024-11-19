@@ -187,3 +187,22 @@ The OTP generation will cease after 5 new OTP requests.
 The last step can be bypasssed by using upper and lower case email like generating 5 otp for samec@gmail.com and  5 for Samec@gmail.com .
 Read this writeups for exploiting this scenario https://bhavukjain.com/blog/2023/07/08/account-takeover-custom-otp
 
+
+
+### Exploiting JSON type request that contains some url in the request body which is reflected while creating password reset link.
+When you see the request like
+```
+POST auth/reset
+
+
+{"email":"samsec@gmail.com",
+  "callbackUrl":"https://vulnerable.com"
+}
+```
+We may be able to tamper the reset link by changing the callbackurl value. But there may be protection against some common attacks. One way you can do is inject nullbyte character but since json doesn't allow us to use url encoded null byte, we can bypass this by using unicode value. JSON RFC allows us to use unicode value in the key value. so final request is like
+```
+{"email":"samsec@gmail.com",
+  "callbackUrl":"https://attacker.com\u0000@vulnerable.com"
+}
+```
+This may bypass the issue. 

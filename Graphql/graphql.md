@@ -1,6 +1,7 @@
 ##### TOOLS
 ````
 https://github.com/swisskyrepo/GraphQLmap
+https://github.com/dolevf/graphql-cop
 ````
 ##### CSRF not protected while creating mutuations
 send the GET request and check if csrf protection is enabled in for this request
